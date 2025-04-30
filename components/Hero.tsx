@@ -1,9 +1,20 @@
+'use client';
+
 import { HeroAnimation } from './animations/HeroAnimation';
 import CTAButton from '@/components/ui/CTAButton';
 import Navbar from '@/components/ui/Navbar';
 import Image from 'next/image';
 
 export default function Hero() {
+	const scrollToSection = (sectionId: string) => {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			const yOffset = -80;
+			const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+			window.scrollTo({ top: y, behavior: 'smooth' });
+		}
+	};
+
 	return (
 		<HeroAnimation>
 			<div
@@ -54,8 +65,13 @@ export default function Hero() {
 
 							{/* Llamada a la acción */}
 							<div className='flex flex-col sm:flex-row gap-4 justify-center items-center'>
-								<CTAButton>Agenda una consulta gratuita</CTAButton>
-								<button className='px-6 py-3 text-blue-200 hover:text-white transition-colors flex items-center gap-2'>
+								<CTAButton onClick={() => scrollToSection('contact')}>
+									Agenda una consulta gratuita
+								</CTAButton>
+								<button
+									onClick={() => scrollToSection('portfolio')}
+									className='px-6 py-3 text-blue-200 hover:text-white transition-colors flex items-center gap-2'
+								>
 									Ver portafolio
 									<svg
 										className='w-4 h-4'
