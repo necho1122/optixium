@@ -1,17 +1,24 @@
-export function Textarea({
-	placeholder,
-	rows = 3,
-	className,
-}: {
-	placeholder?: string;
-	rows?: number;
-	className?: string;
-}) {
-	return (
-		<textarea
-			placeholder={placeholder}
-			rows={rows}
-			className={`w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${className}`}
-		/>
-	);
+import * as React from 'react';
+
+export interface TextareaProps
+	extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+	// Add specific props
+	error?: string;
+	label?: string;
+	resize?: boolean;
 }
+
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
+	({ className, ...props }, ref) => {
+		return (
+			<textarea
+				className={`flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${className}`}
+				ref={ref}
+				{...props}
+			/>
+		);
+	}
+);
+Textarea.displayName = 'Textarea';
+
+export { Textarea };

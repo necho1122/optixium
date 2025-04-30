@@ -3,7 +3,10 @@ import { AboutAnimation, AboutItem } from './animations/AboutAnimation';
 
 export default function About() {
 	return (
-		<section className='relative py-24 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800'>
+		<section
+			id='about'
+			className='relative py-24 overflow-hidden bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800'
+		>
 			{/* Elementos decorativos de fondo */}
 			<div className='absolute inset-0 z-0'>
 				<div className='absolute inset-0 bg-[#001E4F]/5 dark:bg-[#001E4F]/20' />
@@ -43,7 +46,7 @@ export default function About() {
 								<p className='text-lg text-gray-700 dark:text-gray-300 leading-relaxed'>
 									Somos una empresa especializada en{' '}
 									<span className='font-semibold text-blue-600 dark:text-blue-400'>
-										transformación digital y automatización
+										optimizacion, transformación digital y automatización de tareas
 									</span>
 									. Desde nuestra fundación, nos hemos dedicado a potenciar el
 									crecimiento de profesionales y empresas a través de soluciones

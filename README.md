@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Optixium - Soluciones Digitales Empresariales
 
-## Getting Started
+![Optixium Logo](/public/logo.png)
 
-First, run the development server:
+## 🚀 Descripción
+
+Optixium es una empresa especializada en transformación digital y optimización de procesos empresariales. Ofrecemos soluciones personalizadas que combinan tecnología de punta, automatización e inteligencia artificial para impulsar la eficiencia y productividad de nuestros clientes.
+
+## ✨ Características Principales
+
+- 🔄 Transformación Digital Empresarial
+- 💻 Desarrollo Web Profesional
+- 🤖 Automatización de Procesos
+- 📊 Analytics & Business Intelligence
+- 🎯 Soluciones Empresariales Personalizadas
+- 🧠 Integración de Inteligencia Artificial
+- 🛡️ Ciberseguridad
+- 🎨 Diseño UX/UI
+- 📦 Gestión de Datos
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Frontend:**
+
+  - Next.js 14
+  - TypeScript
+  - Tailwind CSS
+  - Lucide Icons
+  - React Icons
+  - Geist Font
+
+- **Herramientas de Desarrollo:**
+  - ESLint
+  - Prettier
+  - Git
+
+## 🚀 Inicio Rápido
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/optixium-web.git
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Estructura del Proyecto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+optixium-web/
+├── app/              # App router y configuración principal
+├── components/       # Componentes reutilizables
+│   ├── ui/          # Componentes de UI base
+│   └── animations/  # Animaciones y efectos
+├── public/          # Archivos estáticos
+└── styles/          # Estilos globales
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Despliegue
 
-## Learn More
+El sitio está optimizado para ser desplegado en Vercel. Para más información sobre el despliegue, visita nuestra [documentación interna].
 
-To learn more about Next.js, take a look at the following resources:
+## 📞 Contacto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Email:** nelsonubac90@gmail.com
+- **WhatsApp:** +5554981156815
+- **Telegram:** @necho1122
+- **LinkedIn:** [Optixium](https://linkedin.com/company/optixium)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👥 Desarrollado por
 
-## Deploy on Vercel
+- Nelson Ubac - [Portfolio](https://nelson-dev-portfolio.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+---
+
+<p align="center">
+  Hecho con ❤️ por Optixium
+</p>

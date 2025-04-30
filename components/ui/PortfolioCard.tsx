@@ -1,32 +1,39 @@
 import Image from 'next/image';
 
+interface PortfolioCardProps {
+	title: string;
+	description: string;
+	imageUrl: string;
+	className?: string;
+}
+
 export default function PortfolioCard({
 	title,
 	description,
 	imageUrl,
-}: {
-	title: string;
-	description: string;
-	imageUrl: string;
-}) {
+	className = '',
+}: PortfolioCardProps) {
 	return (
-		<div className='overflow-hidden transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl'>
-			<div className='relative'>
+		<div
+			className={`group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${className}`}
+		>
+			<div className='aspect-video relative overflow-hidden'>
 				<Image
 					src={imageUrl}
 					alt={title}
 					width={600}
 					height={400}
-					className='w-full h-48 object-cover'
+					className='object-cover'
 				/>
-				<div className='absolute inset-0 bg-black bg-opacity-0 transition-opacity duration-300 hover:bg-opacity-50 flex items-center justify-center'>
-					<h3 className='text-white text-xl font-semibold opacity-0 transition-opacity duration-300 hover:opacity-100'>
-						{title}
-					</h3>
-				</div>
+				<div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
 			</div>
-			<div className='p-4'>
-				<p className='text-gray-700 mt-2'>{description}</p>
+			<div className='p-6'>
+				<h3 className='text-xl font-semibold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-3'>
+					{title}
+				</h3>
+				<p className='text-gray-600 dark:text-gray-300 text-sm'>
+					{description}
+				</p>
 			</div>
 		</div>
 	);
