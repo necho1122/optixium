@@ -73,6 +73,9 @@ export const metadata: Metadata = {
 	manifest: '/manifest.json',
 	verification: {
 		google: 'tu-código-de-verificación-de-google',
+		other: {
+			'msvalidate.01': '3A7262508144352EF1FADB2E137E2926',
+		},
 	},
 };
 
