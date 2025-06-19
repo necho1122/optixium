@@ -34,7 +34,7 @@ export default function Testimonials() {
 						author='Juan Pérez'
 						position='Director de Operaciones'
 						company='TechSolutions Inc.'
-						quote='La implementación de la automatización de procesos ha revolucionado nuestra eficiencia operativa, reduciendo las tareas manuales en un 60%.'
+						quote='La implementación de la automatización de procesos ha revolucionado nuestra eficiencia operativa, reduciendo las tareas manuales en un 65%.'
 					/>
 					<TestimonialCard
 						author='María García'
